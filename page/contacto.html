@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Formulario de contacto de Explora Perú">
+    <meta name="author" content="Explora Perú">
+    <meta name="keywords" content="contacto, viajes, turismo, Perú">
+
+    <title>Contacto - Explora Perú</title>
+
+    <link rel="icon" href="../dist/imagenes/logo.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../dist/css/mi-estilo.css">
+
+</head>
+
+<body>
+
+    <!--HEADER Y MENU RESPONSIVE-->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-explora">
+
+            <div class="container">
+
+                <!-- LOGO -->
+
+                <a class="navbar-brand" href="../index.html">
+
+                    <img src="../dist/imagenes/logo.png"
+                         alt="Logo Explora Perú"
+                         class="logo">
+
+                </a>
+
+                <!-- BOTON HAMBURGUESA -->
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuContacto"
+                        aria-controls="menuContacto"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- MENU -->
+
+                <div class="collapse navbar-collapse" id="menuContacto">
+
+                    <ul class="navbar-nav ms-auto text-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#inicio">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#destinos">
+                                Destinos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#paquetes">
+                                Paquetes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#promociones">
+                                Promociones
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!--MAIN-->
+
+    <main class="container seccion-contacto">
+
+        <section>
+
+            <h1 class="titulo-seccion">
+                Contáctanos
+            </h1>
+
+            <p class="text-center">
+                Completa el siguiente formulario y cuéntanos sobre tu próximo viaje.
+            </p>
+
+            <!-- FORMULARIO -->
+
+            <form class="formulario-contacto">
+
+                <div class="row g-3">
+
+                    <!-- NOMBRES -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txtnombres" class="form-label">
+                            Nombres:
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="txtnombres"
+                               name="nombres"
+                               placeholder="Ingresa tu nombre"
+                               required>
+
+                    </div>
+
+                    <!-- APELLIDOS -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txtapellidos" class="form-label">
+                            Apellidos:
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="txtapellidos"
+                               name="apellidos"
+                               placeholder="Ingresa tu apellido"
+                               required>
+
+                    </div>
+
+                    <!-- CORREO -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txtcorreo" class="form-label">
+                            Correo electrónico:
+                        </label>
+
+                        <input type="email"
+                               class="form-control"
+                               id="txtcorreo"
+                               name="correo"
+                               placeholder="Ingresa tu correo"
+                               required>
+
+                    </div>
+
+                    <!-- TELEFONO -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txttelefono" class="form-label">
+                            Teléfono:
+                        </label>
+
+                        <input type="tel"
+                               class="form-control"
+                               id="txttelefono"
+                               name="telefono"
+                               placeholder="Ingresa tu teléfono"
+                               required>
+
+                    </div>
+
+                    <!-- FECHA -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txtfechaviaje" class="form-label">
+                            Fecha de viaje:
+                        </label>
+
+                        <input type="date"
+                               class="form-control"
+                               id="txtfechaviaje"
+                               name="fechaviaje">
+
+                    </div>
+
+                    <!-- DESTINO -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label for="txtdestino" class="form-label">
+                            Destino:
+                        </label>
+
+                        <select class="form-select"
+                                id="txtdestino"
+                                name="destino"
+                                required>
+
+                            <option value="">
+                                --SELECCIONE DESTINO--
+                            </option>
+
+                            <option value="machupicchu">
+                                Machu Picchu
+                            </option>
+
+                            <option value="cusco">
+                                Cusco
+                            </option>
+
+                            <option value="arequipa">
+                                Arequipa
+                            </option>
+
+                            <option value="paracas">
+                                Paracas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- TIPO DE VIAJE -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label class="form-label">
+                            Tipo de viaje:
+                        </label>
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="tipoviaje"
+                                   id="aventura"
+                                   value="aventura"
+                                   checked>
+
+                            <label class="form-check-label" for="aventura">
+                                Aventura
+                            </label>
+
+                        </div>
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="tipoviaje"
+                                   id="cultural"
+                                   value="cultural">
+
+                            <label class="form-check-label" for="cultural">
+                                Cultural
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACTIVIDADES -->
+
+                    <div class="col-12 col-md-6">
+
+                        <label class="form-label">
+                            Actividades:
+                        </label>
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   name="actividad"
+                                   id="visitas"
+                                   value="visitas">
+
+                            <label class="form-check-label" for="visitas">
+                                Visitas turísticas
+                            </label>
+
+                        </div>
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   name="actividad"
+                                   id="gastronomia"
+                                   value="gastronomia">
+
+                            <label class="form-check-label" for="gastronomia">
+                                Gastronomía
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MENSAJE -->
+
+                    <div class="col-12">
+
+                        <label for="mensaje" class="form-label">
+                            Mensaje:
+                        </label>
+
+                        <textarea class="form-control"
+                                  name="mensaje"
+                                  id="mensaje"
+                                  rows="6"
+                                  placeholder="Escriba su mensaje"></textarea>
+
+                    </div>
+
+                    <!-- BOTONES -->
+
+                    <div class="col-12 text-center mt-4">
+
+                        <button type="submit" class="btn btn-explora">
+                            Enviar solicitud
+                        </button>
+
+                        <button type="reset" class="btn btn-limpiar">
+                            Limpiar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <!-- VOLVER -->
+
+            <div class="text-center mt-4 mb-5">
+
+                <a href="../index.html" class="btn btn-explora">
+                    Volver a Explora Perú
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--FOOTER-->
+
+    <footer class="footer-explora">
+
+        <div class="container py-4">
+
+            <div class="row align-items-center">
+
+                <!-- INFORMACION -->
+
+                <div class="col-md-6 text-center text-md-start">
+
+                    <h3>Explora Perú</h3>
+
+                    <p>
+                        Tu próxima aventura comienza aquí.
+                        <br>
+                        Dirección: Av. Turismo 123, Lima
+                        <br>
+                        Teléfono: 987-654-321
+                        <br>
+                        Correo: contacto@exploraperu.com
+                    </p>
+
+                </div>
+
+                <!-- REDES SOCIALES -->
+
+                <div class="col-md-6 text-center">
+
+                    <h3>Síguenos</h3>
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="https://static.designboom.com/wp-content/uploads/2023/09/facebook-new-logo-change-designboom-02.jpg"
+                             alt="Facebook"
+                             class="icono-social">
+
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                             alt="Instagram"
+                             class="icono-social">
+
+                    </a>
+
+                    <a href="https://www.youtube.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+                             alt="YouTube"
+                             class="icono-social">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright text-center py-3">
+
+            <p>
+                © 2026 Explora Perú - Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP FLOTANTE -->
+
+    <a href="https://wa.me/519XXXXXXXX"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+
+        <img src="../dist/imagenes/whatsapp.png"
+             alt="WhatsApp">
+
+    </a>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

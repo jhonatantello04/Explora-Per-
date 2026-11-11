@@ -1,0 +1,624 @@
+/*ESTILOS GENERALES - EXPLORA PERU */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E1F5DC;
+    color: #243746;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    overflow: hidden;
+}
+
+
+/* HEADER Y NAVBAR */
+
+header {
+    background-color: #0B4F71;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-explora {
+    background-color: #0B4F71;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    max-width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.06);
+}
+
+.navbar-explora .navbar-nav {
+    gap: 8px;
+}
+
+.navbar-explora .nav-link {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 16px !important;
+    border-radius: 8px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.navbar-explora .nav-link:hover,
+.navbar-explora .nav-link.active {
+    background-color: #F4B942;
+    color: #173746;
+    transform: translateY(-2px);
+}
+
+.navbar-explora .navbar-toggler {
+    border: 2px solid #FFFFFF;
+}
+
+.navbar-explora .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(244, 185, 66, 0.5);
+}
+
+
+/*BOTONES PERSONALIZADOS */
+
+.btn-explora,
+.btn-limpiar {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: #F4B942;
+    color: #173746;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-explora:hover,
+.btn-limpiar:hover {
+    background-color: #0B4F71;
+    color: #FFFFFF;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* BIENVENIDA Y BANNER*/
+
+.bienvenida {
+    padding: 45px 25px;
+    background-color: #87CEEB;
+}
+
+.bienvenida-texto {
+    padding: 25px;
+}
+
+.bienvenida h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    color: #073B56;
+    font-weight: bold;
+}
+
+.bienvenida h3 {
+    color: #164E63;
+    font-size: 23px;
+}
+
+.bienvenida p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.imagen-banner {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.imagen-banner:hover {
+    transform: scale(1.03);
+}
+
+
+/* ANIMACIONES*/
+
+.titulo-animado {
+    animation: aparecer 1.2s ease-out both;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* TITULOS Y SECCIONES */
+
+.seccion-contenido {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.titulo-seccion {
+    margin: 10px 0 25px;
+    text-align: center;
+    color: #0B4F71;
+    font-size: clamp(27px, 4vw, 34px);
+    font-weight: bold;
+}
+
+.seccion-contenido > p {
+    color: #405965;
+}
+
+
+/* CARRUSEL BOOTSTRAP */
+
+.seccion-carrusel {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.seccion-carrusel > p {
+    margin-bottom: 25px;
+}
+
+#carruselPeru {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-carrusel {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+#carruselPeru .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+#carruselPeru .carousel-caption h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#carruselPeru .carousel-caption p {
+    color: #FFFFFF;
+}
+
+
+/* TARJETAS DE DESTINOS */
+
+.tarjeta-explora {
+    overflow: hidden;
+    border: none;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.tarjeta-explora:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.tarjeta-explora .card-img-top {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-explora:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+.tarjeta-explora .card-body {
+    padding: 20px;
+}
+
+.tarjeta-explora .card-title {
+    color: #12658A;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.tarjeta-explora .card-text {
+    color: #4B5D66;
+}
+
+
+/* PAQUETES TURISTICOS */
+
+.paquete-explora {
+    border: none;
+    border-radius: 14px;
+    background-color: #D5EAF3;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease,
+                background-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.paquete-explora:hover {
+    transform: translateY(-7px);
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.paquete-explora .card-body {
+    padding: 30px 20px;
+}
+
+.paquete-explora .card-title {
+    color: #12658A;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.paquete-explora p {
+    color: #405965;
+}
+
+
+/* PROMOCIONES ESPECIALES */
+
+.precio-anterior {
+    color: #777777;
+    margin-bottom: 0;
+}
+
+.precio-actual {
+    color: #168447;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+/*FOOTER*/
+
+.footer-explora {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.footer-explora h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-explora p {
+    color: #FFFFFF;
+}
+
+.footer-explora a {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.icono-social {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+.footer-explora a:hover .icono-social {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.copyright {
+    background-color: #052C38;
+}
+
+.copyright p {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+/*MODAL BOOTSTRAP */
+
+#modalExplora .modal-content {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#modalExplora .modal-header {
+    background-color: #0B4F71;
+    color: #FFFFFF;
+}
+
+#modalExplora .modal-title {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#modalExplora .modal-body {
+    padding: 30px;
+}
+
+#modalExplora .modal-body h3 {
+    color: #12658A;
+}
+
+
+/* WHATSAPP FLOTANTE */
+
+.whatsapp-float {
+    position: fixed;
+    width: 62px;
+    height: 62px;
+    bottom: 22px;
+    right: 22px;
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PAGINA DE CONTACTO */
+
+.seccion-contacto {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.seccion-contacto section > p {
+    color: #405965;
+}
+.formulario-contacto {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.formulario-contacto .form-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #0B4F71;
+    font-weight: bold;
+}
+
+.formulario-contacto .form-control,
+.formulario-contacto .form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B8CDD5;
+    border-radius: 8px;
+    background-color: #F8FCFD;
+    color: #243746;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.formulario-contacto .form-control:focus,
+.formulario-contacto .form-select:focus {
+    border-color: #0B4F71;
+    box-shadow: 0 0 0 3px rgba(11, 79, 113, 0.15);
+}
+
+.formulario-contacto textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.formulario-contacto .form-check-input:checked {
+    background-color: #0B4F71;
+    border-color: #0B4F71;
+}
+
+.formulario-contacto .form-check-label {
+    color: #405965;
+}
+
+
+/* RESPONSIVE - TABLETS */
+
+@media (max-width: 991.98px) {
+
+    .navbar-explora .navbar-nav {
+        padding-top: 12px;
+        gap: 3px;
+    }
+
+    .navbar-explora .nav-link {
+        padding: 10px !important;
+    }
+
+    .imagen-carrusel {
+        height: 350px;
+    }
+
+    .bienvenida {
+        padding: 30px 15px;
+    }
+
+}
+
+
+/*RESPONSIVE - CELULARES */
+
+@media (max-width: 575.98px) {
+
+    .logo {
+        width: 145px;
+    }
+
+    .bienvenida {
+        padding: 25px 12px;
+    }
+
+    .bienvenida-texto {
+        padding: 15px 10px 25px;
+    }
+
+    .bienvenida h1 {
+        font-size: 29px;
+    }
+
+    .bienvenida h3 {
+        font-size: 19px;
+    }
+
+    .imagen-banner {
+        border-radius: 10px;
+    }
+
+    .seccion-carrusel {
+        padding-top: 30px;
+    }
+
+    .imagen-carrusel {
+        height: 230px;
+    }
+
+    #carruselPeru .carousel-caption {
+        padding: 5px;
+        bottom: 15px;
+    }
+
+    #carruselPeru .carousel-caption h3 {
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+
+    #carruselPeru .carousel-caption p {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .seccion-contenido {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .titulo-seccion {
+        font-size: 27px;
+    }
+
+    .tarjeta-explora .card-img-top {
+        height: 230px;
+    }
+
+    .formulario-contacto {
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    .formulario-contacto .btn-explora,
+    .formulario-contacto .btn-limpiar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-explora {
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+}
+
+
+/* ACCESIBILIDAD - MOVIMIENTO REDUCIDO */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+
+
+
